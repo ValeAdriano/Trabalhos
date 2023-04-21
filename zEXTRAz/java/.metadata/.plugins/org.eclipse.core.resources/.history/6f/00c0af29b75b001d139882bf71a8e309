@@ -1,0 +1,10 @@
+package testaCondições;
+
+public class testaCondicoes {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,28 @@
+print('-=-'*8)
+print('MÉDIA')
+print('-=-'*8)
+
+opc = int(input('Que tipo de média você precisa?\n [1] Aritmética\n [2] Ponderada\n '))
+med = 0
+
+if opc == 1:
+    qtd = int(input('Quantas provas você quer calcular? '))
+    for q in range(qtd):
+        nota = float(input('Qual foi a nota da prova {}? '.format(q + 1)))
+        med += nota
+    arit = med / qtd 
+    print('A média aritmética é:', arit)
+
+elif opc == 2:
+    qtd = int(input('Quantas provas você quer calcular? '))
+    notas = []
+    pesos = []
+    for i in range(qtd):
+        nota = float(input('Digite a nota da prova {} : '.format(i+1)))
+        peso = float(input('Digite o peso da prova {} : '.format(i+1)))
+        notas.append(nota)
+        pesos.append(peso)
+    media_ponderada = sum([notas[i]*pesos[i] for i in range(qtd)]) / sum(pesos)
+    print('A média ponderada é:', media_ponderada)
+else:
+    print('Opção inválida')
