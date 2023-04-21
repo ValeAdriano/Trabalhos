@@ -41,4 +41,3 @@ elif opcao_regra == 1:
         numero_decimal = int(input('Digite um número DECIMAL: '))
         numero_octal = oct(numero_decimal)[2: ]
         print(numero_octal)
-
