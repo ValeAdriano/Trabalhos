@@ -1,99 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nanum Gothic Coding', monospace;
+}
+
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  background: #1e1f2b;
+  /* font-family: Gothic Medium,'Courier New', Courier, monospace; */
+  font-size: x-large;
+  color: #f7f7fa; 
+}
+*{
+    margin: 10;
+    padding: 10;
     box-sizing: border-box;
-  }
-  
-  body {
-    min-height: 100vh;
-    display: grid;
-    place-items: center;
-    padding: 1rem;
-    background: #272a37;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: x-large;
-    color: rgb(230,237,243);
-  }
-  
-  form {
-    width: 100%;
-    max-width: 30rem;
-  }
-  
-  label,
-  input,
-  textarea,
-  button {
-    display: block;
-  }
-  
-  input,
-  textarea,
-  button {
-    width: 100%;
-    font: inherit;
-    padding: 1.25rem;
-    font-weight: 700;
-  }
-  
-  input,
-  textarea {
-    margin-bottom: 1rem;
-    color: white;
-    background: #323644;
-    border: 0.125rem solid transparent;
-    border-radius: 1.125rem;
-    transition: border-color 0.3s, box-shadow 0.3s;
-  }
-  
-  input:hover,
-  input:focus,
-  textarea:hover,
-  textarea:focus {
-    outline: none;
-    border-color: #1d90f5;
-    box-shadow: 0 0 0 0.3125rem #26344a;
-  }
-  
-  label {
-    margin-bottom: 0.5rem;
-    color: #84868f;
-  }
-  
-  textarea {
-    min-height: 12.5rem;
-    resize: vertical;
-  }
-  
-  button {
-    border: none;
-    border-radius: 99px;
-    color: white;
-    background: #1d90f5;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-  
-  button:hover,
-  button:focus {
-    outline: none;
-    background: #1c70d3;
-  }
-  
-  button:disabled {
-    cursor: not-allowed;
-    background: #555b69;
-  }
-  
-  .success,
-  .error {
-    text-align: center;
-  }
-  
-  .success {
-    color: greenyellow;
-  }
-  
-  .error {
-    color: tomato;
-  }
+}
+.container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.child{
+    width: 33.3%;
+  height: 500px;
+}
+
+form {
+  width: 100%;
+  max-width: 30rem;
+}
+
+label,
+input,
+textarea,
+button {
+  display: block;
+}
+
+input,
+textarea,
+button {
+  width: 100%;
+  font: inherit;
+  padding: 1.25rem;
+  font-weight: 700;
+}
+input,
+textarea {
+  margin-bottom: 1rem;
+  color: white;
+  background: #323644;
+  border: 0.125rem solid transparent;
+  border-radius: 1.125rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus {
+  outline: none;
+  border-color: #1d90f5;
+  box-shadow: 0 0 0 0.3125rem #26344a;
+}
+
+label {
+  margin-bottom: 0.5rem;
+  color: #84868f;
+}
+
+textarea {
+  min-height: 12.5rem;
+  resize: vertical;
+}
+
+button {
+  border: none;
+  border-radius: 99px;
+  color: white;
+  background: #1d90f5;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover,
+button:focus {
+  outline: none;
+  background: #1c70d3;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  background: #555b69;
+}
+
+.success,
+.error {
+  text-align: center;
+}
+
+.success {
+  color: greenyellow;
+}
+
+.error {
+  color: tomato;
+}

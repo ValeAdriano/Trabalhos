@@ -12,7 +12,7 @@ class FormSubmit {
     displaySuccess() {
       this.form.innerHTML = this.settings.success;
     }
-  
+   
     displayError() {
       this.form.innerHTML = this.settings.error;
     }
