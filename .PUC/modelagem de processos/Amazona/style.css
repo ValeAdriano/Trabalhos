@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Nanum Gothic Coding', monospace;
+    font-family: 'Courier New', Courier, monospace;
   }
   
   
@@ -14,5 +14,22 @@
     background: #e2ffd8;
     /* font-family: Gothic Medium,'Courier New', Courier, monospace; */
     font-size: x-large;
-    color: #f7f7fa; 
+    color: #006400; 
   }
+*{
+  margin: 15px;
+  padding: 0;
+  box-sizing: border-box;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+ 
+  }
+    .child{
+         width: 95%;
+    height: 500px;
+    background-color: #9FE7BC;
+    border-style: solid;
+    border-radius: 15px;
+    }
