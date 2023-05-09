@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,63 +8,80 @@
     <link rel="stylesheet" href="style.css">
     <title>Adriano Vale</title>
 </head>
+
 <body>
-<div class="child">
-    <h1 aling="left">Hello, I'm <br> Adriano Vale </h1>
-    <h5 aling="left">Software Eng. student at PUCPR <br> learning how to develop innovative <br> and efficient technological solutions.</h5>
-    <br>
-    <input class="favorite styled"
-       type="button"
-       value="About Me">  
-    </div> <br><br><br>
 
-</div>
-<div class="child2">    
-    <h1 aling='left' style="color: #FF4A57;"><strong> About me  </strong></h1>
-    <hr style="width: 277px;">
-       <br><br>
-    <h4>
-        Hello! I'm a Brazilian software engineering student from the prestigious PUCPR, and I am passionate about all areas of programming, from algorithms and data structures to web development. I am always seeking new experiences to enhance my skills and meet the demands of the market. I am eager to learn the technologies required by it!</h4>
-</div>
+    <section class="buceta">
+        <canvas id="canvas" class="animation">
+        </canvas>
+        <div class="child" id="home">
+            <h1 aling="left">Hello, I'm <br> Adriano Vale </h1>
+            <h5 aling="left">Software Eng. student at PUCPR <br> learning how to develop innovative <br> and efficient
+                technological solutions.</h5>
+            <br>
+            <a class="favorite styled" href="#about" id="abtocont">About me! </a>
+        </div> <br><br><br>
 
-<div class="child3">
-    <h1 aling="left" style="color: #FF4A57;">Languages</h1> <br><br>
+        </div>
+    </section>
+    <section class="about-sec">
+    <div class="about_container" id="about">
+        <div class="child2">
+            <h1 aling='left' style="color: #FF4A57;"><strong> About me </strong></h1>
+            <hr style="width: auto;">
 
-    <img align="center" src="python2png.png" alt="username" width="40" /></a>
+            <br><br>
+            <h4>
+                Hello! I'm a Brazilian software engineering student from the prestigious PUCPR, and I am passionate
+                about all areas of programming, from algorithms and data structures to web development. I am always
+                seeking new experiences to enhance my skills and meet the demands of the market. I am eager to learn the
+                technologies required by it!</h4>
+            <br>
+            <a class="favorite styled" href="#soci" align="right">Contacts and skills! </a>
 
-    <img align="center" src="HTML.png" alt="username"  width="40" /></a>
-          
-    <img align="center" src="CSS.png" alt="username" width="40" /></a>
-
-    <img align="center" src="JS.png" alt="username" width="40" /></a>
-
-    <br><br><br><br><br>
-
-    <h1 aling="left" style="color: #FF4A57;">Social media</h1> <br><br>
-
-    <div class="imagem">
-        <img src="github.png" width="40">
-      </div>
-    <img align="center" src="github.png" style="color:#FF4A57;" alt="username" width="40" /></a>
-
-    <img align="center" src="HTML.png" alt="username"  width="40" /></a>
-          
-    <img align="center" src="CSS.png" alt="username" width="40" /></a>
-
-    <img align="center" src="JS.png" alt="username" width="40" /></a>
-
-</div>
-<br><br><br>
+        </div>
+    </div>
+</section>
+    <div class="child5">
 
 
-<div class="child4"> </div>
+    </div>
+    <div class="child3" id="soci">
+        <h1 aling="left" style="color: #FF4A57;">Skills</h1> <br><br>
+
+
+        <img align="center" src="python2png.png" alt="username" width="40" /></a>
+
+        <img align="center" src="HTML.png" alt="username" width="40" /></a>
+
+        <img align="center" src="CSS.png" alt="username" width="40" /></a>
+
+        <img align="center" src="JS.png" alt="username" width="40" /></a>
+
+        <img align="center" src="exel.png" alt="username" width="70" /></a>
+        <br><br><br><br><br>
+
+        <h1 aling="left" style="color: #FF4A57;">Social media</h1> <br><br>
+
+        <img align="center" src="git.png" style="color:#FF4A57;" alt="username" width="70" /></a>
+
+        <img align="center" src="linkedin.png" alt="username" width="40" /></a>
+
+        <img align="center" src="wpp.png" alt="username" width="70" /></a>
+
+
+    </div>
+    </div>
+    <br><br><br>
+
+    <div class="child5">
+
+
+    </div>
+    <div class="child4" id="contato"> </div>
     <h3 style="color: #FF4A57;">Entre em contato:</h3>
     <br>
-        <form
-        action="https://formsubmit.co/ajax/acsvalefilho@gmail.com"
-        method="POST"
-        data-form
-        >
+    <form action="https://formsubmit.co/ajax/acsvalefilho@gmail.com" method="POST" data-form>
         <label for="nome">Name</label>
         <input type="text" name="nome" id="nome" required />
         <label for="email">E-mail</label>
@@ -71,7 +89,9 @@
         <label for="mensagem">Message</label>
         <textarea name="mensagem" id="mensagem" required></textarea>
         <button type="submit" data-button>Send</button>
-        </form>
-<div>
+    </form>
+    <div>
+        <script src="bg.js"></script>
 </body>
+
 </html>
