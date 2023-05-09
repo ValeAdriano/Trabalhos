@@ -29,6 +29,21 @@ hr{
   color: #FF4A57;
   border-color: #FF4A57;
 }
+:root {
+  --cor-da-imagem: #FF4A57;
+}
+.imagem {
+  filter: hue-rotate(11deg);
+}
+.imagem {
+  filter: hue-rotate(calc(var(--graus-diferenca) * 1deg));
+}
+:root {
+  --cor-da-imagem: #7DCE82;
+  --graus-diferenca: 123;
+} 
+
+
 .styled {
     width: 300px;
     border: 0;
@@ -58,7 +73,101 @@ hr{
 
 .child2{
   width: 60%;
-  height: 500px;
+  height: 400px;
   padding: 50px;
   background-color: #2B2D41;
+}
+.child3{
+  width: 60%;
+  height: 200px;
+  padding: 50px;
+  ;
+}
+.child4{
+  width: 60%;
+  height: 400px;
+  padding: 50px;
+}
+
+
+form {
+  width: 100%;
+  max-width: 30rem;
+}
+
+label,
+input,
+textarea,
+button {
+  display: block;
+}
+
+input,
+textarea,
+button {
+  width: 100%;
+  font: inherit;
+  padding: 1.25rem;
+  font-weight: 700;
+}
+input,
+textarea {
+  margin-bottom: 1rem;
+  color: white;
+  background: #323644;
+  border: 0.125rem solid transparent;
+  border-radius: 0rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus {
+  outline: none;
+  border-color: #FF4A57;
+  box-shadow: 0 0 0 0.3125rem #26344a;
+}
+
+label {
+  margin-bottom: 0.5rem;
+  color: #84868f;
+}
+
+textarea {
+  min-height: 12.5rem;
+  resize: vertical;
+}
+
+button {
+  border: none;
+  border-radius: 0px;
+  color: white;
+  background: #FF4A57;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover,
+button:focus {
+  outline: none;
+  background: #FF4A57;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  background: #555b69;
+}
+
+.success,
+.error {
+  text-align: center;
+}
+
+.success {
+  color: greenyellow;
+}
+
+.error {
+  color: tomato;
 }
