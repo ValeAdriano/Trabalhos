@@ -13,50 +13,123 @@
 
 
 
-        <div class="titulo">
+       <div class="titulo">
     
             <img src="globapaylogo.png" alt="">
 
-    </div>
 <br><br>
 
-
-    <div class="conversor">
-
-    
-        <div id="meio">
-            <section>
-                <h1 class="page-title" aling="'left">
-                    Conversor
-                </h1>
-                <br><br> 
-                    <input type="text" name="txt" placeholder="Ex: 20" id="pequena">
+<div class="pag1">
+                <div class="conversor">
+            
+                    <h1 class="page-title" aling="'left">
+                        Conversor
+                    </h1>
+                    <br><br> 
+                    <input type="text" name="txt" id="pequena">
                     <br><br>
                     <select id="p1">
-                        <option>Estados Unidos, Dollar (USD)</option>
-                        <option>Brasil, Real (BRL)</option>
+                        <option>USD</option>
+                        <option>BRL</option>
                     </select>
                     <br>
                     <br>
                     <img src="seta.png" width="30px">
                     <br><br>
                     <select id="p2">
-                        <option>Brasil, Real (BRL)</option>
-                        <option>Estados Unidos, Dollar (USD)</option>
+                        <option>USD</option>
+                        <option>BRL</option>
                     </select>
                     <br><br>
-                    <input type="button" value="CONVERTER" onclick="gerar()" id="botao">
+                    <input type="button" value="CONVERTER" onClick="gerar()" id="botao">
         
                     <h1 id="conversoJanela"></h1>
-            </div>                 
+                </div>                 
                                 
-            </section> 
-    </div>             
-         
-         
+             <div class="about">
 
+                <h1>Sobre nós</h1>
+                <br><br>
 
-        <script>conversor.js</script>
+                <h2>
+                    Na Global Pay, temos orgulho em oferecer as melhores taxas de câmbio disponíveis no mercado para nossos clientes, graças ao nosso sistema de conversão automática de moedas. Nossa equipe de atendimento ao cliente está sempre disponível para ajudar e orientar nossos clientes em todas as etapas do processo. Entre em contato conosco hoje para saber mais sobre nossos serviços.</h2>
+
+             </div>
+            
+             
+             
+             
+             
+            </div>
+            
+<div class="pag2">
+    
+    <script src="https://kit.fontawesome.com/f9275dded9.js" crossorigin="anonymous"></script>
+    
+    
+    <!--Trigger-->
+    
+    <div id="login" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        
+        <div class="modal-content">
+          <div class="modal-body">
+            
+            <div class="container" id="container">
+                            <div class="form-container sign-up-container">
+                                <form action="#">
+                                    <h1>Create Account</h1>
+                                    <div class="social-container">
+                                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                                    </div> 
+                                    <span>or use your email for registration</span>
+                                    <input type="text" placeholder="Name" />
+                                    <input type="email" placeholder="Email" />
+                                    <input type="password" placeholder="Password" />
+                                    <button>Sign Up</button>
+                                </form>
+                            </div>
+                            <div class="form-container sign-in-container">
+                                <form action="#">
+                                    <h1>Sign in</h1>
+                                    <div class="social-container">
+                                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                                    </div>
+                                    <span>or use your account</span>
+                                    <input type="email" placeholder="Email" />
+                                    <input type="password" placeholder="Password" />
+                                    <a href="#">Forgot your password?</a>
+                                    <button>Sign In</button>
+                                </form>
+                            </div>
+                            <div class="overlay-container">
+                                <div class="overlay">
+                                    <div class="overlay-panel overlay-left">
+                                        <h1>Welcome Back!</h1>
+                                        <p>To keep connected with us please login with your personal info</p>
+                                        <button class="ghost" id="signIn">Sign In</button>
+                                    </div>
+                                    <div class="overlay-panel overlay-right">
+                                        <h1>Hello, Friend!</h1>
+                                        <p>Enter your personal details and start journey with us</p>
+                                        <button class="ghost" id="signUp">Sign Up</button>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+          </div>
+        </div>
+      </div>  
+    </div>
+
+</div>
+
+        <script src="cadastro.js"></script>
+        <script src="conversor.js"></script>
 </body>
  
 </html>
