@@ -34,8 +34,6 @@ body{
   text-align: center;
 }
 
-
-
 .conversor {
   width: 20vw;
   height: 40vh;
@@ -45,6 +43,19 @@ body{
   border-radius: 10px;
   text-align: center;
   flex-direction: column;
+  flex: 1;
+}
+
+.aboutus {
+  width: 60vw;
+  height: 40vh;
+  padding: 50px;
+  margin: 50px;
+  background-color: #263a53;
+  border-radius: 10px;
+  text-align: center;
+  flex-direction: column;
+  flex: 1;
 }
 
 
