@@ -405,3 +405,27 @@ input {
 	width: 200px;
 }
 
+.labs{
+	color: transparent;
+	text-shadow: #232631 0 0 7px;
+	border-radius: 10px;
+	background-color: #3a3b42;
+	right: auto;
+	padding: 10px;
+	margin: auto; 
+	&:hover{
+		top: 40px;
+		right: auto;
+		padding: 20px;
+		text-transform: uppercase;
+		border: 1px solid #3a3b42;
+		text-decoration:none;
+		background-color: #3a3b42;
+		z-index: 99;
+		color:aliceblue;
+		transition:all 300ms;
+		border-radius: 10px;	
+		font-family: 'Nanum Gothic Coding', monospace;
+
+	}
+}
