@@ -1,5 +1,5 @@
 <div align="center">
-<h1>Welcome to Adriano's profile <img src="https://em-content.zobj.net/source/noto-emoji-animations/344/waving-hand_light-skin-tone_1f44b-1f3fb_1f3fb.gif" width="30" 
+<h1>Welcome to Adriano's profile <img src="https://em-content.zobj.net/source/noto-emoji-animations/344/waving-hand_light-skin-tone_1f44b-1f3fb_1f3fb.gif" width="30"> 
 <p align="center">
                            
 </h2>
