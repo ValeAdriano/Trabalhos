@@ -14,7 +14,7 @@ while True:
     elif opc != 'y':
         print('Opção invalida, tente novamente')
     
-    if num is in lista:
+    if num in lista:
         print('O número {} é pertence a lista'.format(num))
 min = min(lista)
 max = max(lista)
