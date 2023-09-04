@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: Montserrat;
+
+  
+  }
+
+.banner{
+    position: absolute;
+    width: 100vw;
+}
+
+.prod{
+    position: absolute;
+    left: 40vw;
+    top: 30vh;
+}
+
+.engrenagem{
+    position: absolute;
+    left: 60vw;
+    top: 6vh;
+}
+
+poducao{
+    
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+
+}
+
+.cases{
+    margin 
+}
