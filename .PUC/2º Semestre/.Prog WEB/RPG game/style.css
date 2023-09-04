@@ -1,0 +1,27 @@
+*{
+    margin: 10px;
+    background-color: rgb(219, 255, 165);
+    align-items: center;
+    text-align: center;
+
+}
+
+img{
+    border-radius: 20px;
+    width: 30vw;
+
+
+}
+
+.texto{
+    display: inline-block;
+    position: relative;
+}
+
+.texto p {
+    position: absolute;
+    margin: 50px;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+}
+
