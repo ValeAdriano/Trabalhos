@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
+
 *{
     margin: 10px;
     background-color: rgb(219, 255, 165);
     align-items: center;
     text-align: center;
+    font-family: 'Nanum Gothic Coding', monospace;
+    font-weight: 5000;
 
 }
 
@@ -20,8 +24,9 @@ img{
 
 .texto p {
     position: absolute;
-    margin: 50px;
-    font-size: 15px;
+    margin: 60px;
+    font-size: 30px;
     color: rgb(0, 0, 0);
+    background-color: transparent;
 }
 
