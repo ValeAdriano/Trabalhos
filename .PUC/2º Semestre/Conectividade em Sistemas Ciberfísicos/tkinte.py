@@ -1,6 +1,6 @@
 import tkinter as tk
 import socket
-import threading
+import threading 
 
 #INFORMAÇÕES DO SERVIDOR
 HOST = "127.0.0.1"

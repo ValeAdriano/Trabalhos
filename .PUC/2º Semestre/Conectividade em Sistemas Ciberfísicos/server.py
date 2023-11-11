@@ -1,6 +1,43 @@
 import socket
 import threading
-import os
+import os 
+
+def entra(conn, ender):
+    try:
+        nome = conn.recv(50).decode()
+        print(f"Conectado com {nome}, IP: {ender[0]}, PORTA: {ender[1]}")
+        
+        # Informar aos outros clientes que um novo usuário entrou no chat
+        mensagemEntrada = f"{nome} entrou no chat."
+        for cliente in lista_cliente:
+            if cliente != conn:
+                cliente.sendall(mensagemEntrada.encode())
+    except:
+        print("Ocorreu um erro durante o recebimento do nome. A conexão será encerrada")
+        return
+    
+    while True:
+        try:
+            mensagem = conn.recv(1024).decode()
+            mensagemNome = nome + " >> " + mensagem
+            print(mensagemNome)
+            
+            # Fazer broadcast da mensagem para outros clientes
+            for cliente in lista_cliente:
+                if cliente != conn:
+                    cliente.sendall(mensagemNome.encode())
+        except:
+            print(f"{nome} saiu do chat.")
+            
+            # Informar aos outros clientes que o usuário saiu do chat
+            mensagemSaida = f"{nome} saiu do chat."
+            for cliente in lista_cliente:
+                if cliente != conn:
+                    cliente.sendall(mensagemSaida.encode())
+            
+            # Remover o cliente da lista de clientes
+            lista_cliente.remove(conn)
+            break
 
 def limpaTerminal():
     os.system('cls' if os.name == 'nt' else 'clear')

@@ -1,6 +1,6 @@
 import socket
 import threading
-import os
+import os 
 
 
 def limpaTerminal():
