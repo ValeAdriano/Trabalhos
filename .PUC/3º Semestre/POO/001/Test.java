@@ -38,6 +38,9 @@ public class Test {
           System.out.println("Os números " + impar + "são impares");  
     }
 
+    public static void main(String[] args) {
+        
+    }
 
 
 }
